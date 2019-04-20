@@ -1,0 +1,21 @@
+.header {
+  background: rgba(230,240,255,.65);
+  padding: .8rem;
+  z-index: 100;
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  width: 100%;
+}
+
+.back {
+  position: fixed;
+  right: .5rem;
+  bottom: 2rem;
+}
+
+.btn-back {
+  background-color: rgba(230,240,255,.65);
+  border: .1rem solid rgba(255,180,180,.80);
+  border-radius: 5rem;
+}
