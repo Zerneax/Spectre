@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="column col-8 col-mx-auto pt-2">
+    <h1 class="text-center text-primary"> Mémo Spectre.css </h1>
+  </div>
+  <div class="divider"></div>
+  <div class="column col-10 col-mr-auto">
+    <h3 class="text-left text-primary"> Layout </h3>
+    <samp class="mx-2"> Taille des div </samp>
+    <div class="pt-2">
+      <div class="column col-12 bg-gray"> <p class="var"> col-12 (100%) </p></div>
+      <div class="column col-9 bg-gray"> <p class="var"> col-9 (75%) </p></div>
+      <div class="column col-6 bg-gray"> <p class="var"> col-6 (50%) </p></div>
+      <div class="column col-3 bg-gray"> <p class="var"> col-3 (25%) </p></div>
+    </div>
+    <pre class="code" data-lang="html">
+      <code><span class="code-comment">&lt;!--Size of div--&gt;</span>
+<span><samp class="code-tag">&lt;div</samp> class="<samp class="code-class">column col-12</samp>"<samp class="code-tag">&gt;</samp><samp class="code-tag">&lt;/div&gt;</samp></span>
+<span><samp class="code-tag">&lt;div</samp> class="<samp class="code-class">column col-9</samp>"<samp class="code-tag">&gt;</samp><samp class="code-tag">&lt;/div&gt;</samp></span>
+<span><samp class="code-tag">&lt;div</samp> class="<samp class="code-class">column col-6</samp>"<samp class="code-tag">&gt;</samp><samp class="code-tag">&lt;/div&gt;</samp></span>
+<span><samp class="code-tag">&lt;div</samp> class="<samp class="code-class">column col-3</samp>"<samp class="code-tag">&gt;</samp><samp class="code-tag">&lt;/div&gt;</samp></span>
+      </code>
+    </pre>
+    <h5 class="mx-2 text-primary"> Flexbox grid </h5>
+    <div class="columns pt-2 pb-2">
+      <ng-container *ngFor="let number of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]">
+        <div class="column" *ngIf="number % 2 == 0"><div class="bg-secondary text-secondary borderDiv"></div></div>
+        <div class="column" *ngIf="number % 2 != 0"><div class="bg-primary text-primary borderDiv"></div></div>
+      </ng-container>
+    </div>
+    <samp> Pour ajouter un flexbox grid, ajouter une div avec <code>columns</code> dans un container <code>container</code>. Ajouter un element avec <code>column</code>. Pour specifier la taille, utiliser <code>col-<1-12></code>.</samp>
+    <h5 class="mx-2 pt-2 text-primary"> Gapless grid </h5>
+    <div class="columns col-gapless pt-2 pb-2">
+      <div class="column"><div class="bg-primary borderDiv">col-6 gapless</div></div>
+      <div class="column"><div class="bg-primary borderDiv">col-6 gapless</div></div>
+    </div>
+  </div>
+</div>
