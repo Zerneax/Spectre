@@ -18,8 +18,8 @@
 <span><samp class="code-tag">&lt;div</samp> class="<samp class="code-class">column col-9</samp>"<samp class="code-tag">&gt;</samp><samp class="code-tag">&lt;/div&gt;</samp></span>
 <span><samp class="code-tag">&lt;div</samp> class="<samp class="code-class">column col-6</samp>"<samp class="code-tag">&gt;</samp><samp class="code-tag">&lt;/div&gt;</samp></span>
 <span><samp class="code-tag">&lt;div</samp> class="<samp class="code-class">column col-3</samp>"<samp class="code-tag">&gt;</samp><samp class="code-tag">&lt;/div&gt;</samp></span>
-</code></pre>
-      <div class="column pt-2 pb-2">
+      </code></pre>
+      <div class="column pt-2">
         <h5 class="mx-2 text-primary"> Flexbox</h5>
         <div class="columns pt-2 pb-2">
           <ng-container *ngFor="let number of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]">
@@ -29,6 +29,7 @@
         </div>
         <samp> To add a flexbox grid, add a div with <code>columns</code> in a container <code>container</code>. Add an element with <code>column</code>. To specifier the size, use <code>col-<1-12></code>.</samp>
       </div>
+      <div class="column pt-2">
         <h5 class="mx-2 pt-2 text-primary"> Gapless grid </h5>
         <div class="columns col-gapless pt-2 pb-2">
           <div class="column"><div class="bg-primary borderDiv">col-6 gapless</div></div>
@@ -36,5 +37,38 @@
         </div>
         <samp> To have div without margin, use <code>col-gapless</code> in <code>columns</code>.</samp>
       </div>
-    </section>
-  </div>
+      <div class="column pt-2">
+        <h5 class="mx-2 pt-2 text-primary"> Column offset </h5>
+        <div class="columns pt-2">
+          <div class="column col-4 col-mr-auto bg-primary">col-4 col-mr-auto</div>
+          <div class="column col-2 bg-secondary">col-2</div>
+        </div>
+        <pre class="code" data-lang="html"><code><span class="code-comment">&lt;!--grid offset example--&gt;</span>
+<span><samp class="code-tag">&lt;div</samp> class="<samp class="code-class">container</samp>"<samp class="code-tag">&gt;</samp></span>
+  <span><samp class="code-tag">&lt;div</samp> class="<samp class="code-class">columns</samp>"<samp class="code-tag">&gt;</samp></span>
+    <span><samp class="code-tag">&lt;div</samp> class="<samp class="code-class">column col-4 col-mr-auto</samp>"<samp class="code-tag">&gt;</samp>col-4 col-mr-auto<samp class="code-tag">&lt;/div&gt;</samp></span>
+    <span><samp class="code-tag">&lt;div</samp> class="<samp class="code-class">column col-2</samp>"<samp class="code-tag">&gt;</samp>col-2<samp class="code-tag">&lt;/div&gt;</samp></span>
+  <span><samp class="code-tag">&lt;div&gt;</samp></span>
+<span><samp class="code-tag">&lt;div&gt;</samp></span>
+        </code></pre>
+        <samp> The flexbox grid provides margin auto utilities to set offset. There are <code>col-mx-auto</code>, <code>col-ml-auto</code> and <code>col-mr-auto</code> to set margins without using empty columns.</samp>
+      </div>
+      <div class="column pt-2">
+        <h5 class="mx-2 pt-2 text-primary"> Auto width column </h5>
+        <div class="columns pt-2">
+          <div class="column col-lg-auto col-6"><div class="px-2 bg-primary">col-lg-auto</div></div>
+          <div class="column"><div class="px-2 bg-secondary">col</div></div>
+        </div>
+        <pre class="code" data-lang="html"><code><span class="code-comment">&lt;!--auto width column example--&gt;</span>
+<span><samp class="code-tag">&lt;div</samp> class="<samp class="code-class">container</samp>"<samp class="code-tag">&gt;</samp></span>
+  <span><samp class="code-tag">&lt;div</samp> class="<samp class="code-class">columns</samp>"<samp class="code-tag">&gt;</samp></span>
+    <span><samp class="code-tag">&lt;div</samp> class="<samp class="code-class">column col-lg-auto col-6</samp>"<samp class="code-tag">&gt;</samp>col-lg-auto<samp class="code-tag">&lt;/div&gt;</samp></span>
+    <span><samp class="code-tag">&lt;div</samp> class="<samp class="code-class">column</samp>"<samp class="code-tag">&gt;</samp>col<samp class="code-tag">&lt;/div&gt;</samp></span>
+  <span><samp class="code-tag">&lt;div&gt;</samp></span>
+<span><samp class="code-tag">&lt;div&gt;</samp></span>
+        </code></pre>
+        <samp> You can use <code>col-auto</code> class to the <code>column</code> to have auto widht columns. There are <code>col-xl-auto</code>, <code>col-lg-auto</code> and <code>col-md-auto</code> and <code>col-xs-auto</code> to set auto width in different viewport sizes.</samp>
+      </div>
+    </div>
+  </section>
+</div>
