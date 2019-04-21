@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { SummaryComponent } from './pages/summary/summary.component';
 import { NavigationComponent } from './component/navigation/navigation.component';
 import { SidebarComponent } from './pages/sidebar/sidebar.component';
+import { TopicComponent } from './pages/topic/topic.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SidebarComponent } from './pages/sidebar/sidebar.component';
     HomeComponent,
     SummaryComponent,
     NavigationComponent,
-    SidebarComponent
+    SidebarComponent,
+    TopicComponent
   ],
   imports: [
     BrowserModule,

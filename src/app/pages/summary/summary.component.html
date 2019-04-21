@@ -1,6 +1,5 @@
 <app-navigation></app-navigation>
-
-<div class="container">
+<div class="container" *ngIf="router.url === '/summary'">
   <section class="offset">
     <h2 class="text-primary text-center pb-2"> Layout </h2>
     <div class="columns">
@@ -8,7 +7,7 @@
         <h4 class="">Layout </h4>
         <p> All stuff about layout </p>
         <div class="column text-right">
-          <a class="btn btn-primary" routerLink="/layout"> go to </a>
+          <a class="btn btn-primary" routerLink="/topic/layout"> go to </a>
         </div>
       </div>
       <div class="column col-5 col-mx-auto tiles">
@@ -21,3 +20,5 @@
     </div>
   </section>
 </div>
+
+<router-outlet *ngIf="router.url != '/summary'"></router-outlet>

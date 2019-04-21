@@ -7,7 +7,7 @@ import { LayoutComponent } from './pages/layout/layout.component';
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'summary', component: SummaryComponent},
-  { path: 'layout', component: LayoutComponent}
+  { path: 'topic/layout', component: LayoutComponent}
 ];
 
 @NgModule({
