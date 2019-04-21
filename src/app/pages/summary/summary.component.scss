@@ -6,3 +6,11 @@
   padding: .5rem .5rem;
   box-shadow : 0 .25rem 1rem rgba(48,55,66,.15);
 }
+
+.blur {
+  filter: blur(1px);
+}
+
+.not-active {
+  pointer-events: none;
+}
