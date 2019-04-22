@@ -1,5 +1,5 @@
 <app-sidebar *ngIf="sidebarOpened"></app-sidebar>
-<div [class.blur]="sidebarOpened" [class.not-active]="sidebarOpened">
+<div [class.opacity]="sidebarOpened" [class.not-active]="sidebarOpened">
 
   <app-navigation></app-navigation>
 
@@ -9,14 +9,14 @@
       <div class="columns">
         <div class="column col-5 col-mx-auto tiles">
           <h4 class="">Layout </h4>
-          <p> All stuff about layout </p>
+          <p class="heighPTiles"> All stuff about layout </p>
           <div class="column text-right">
             <a class="btn btn-primary" routerLink="topic/layout" routerLinkActive="active"> go to </a>
           </div>
         </div>
         <div class="column col-5 col-mx-auto tiles">
           <h4 class=""> Responsive </h4>
-          <p> Responsive design is important ! </p>
+          <p class="heighPTiles"> Responsive design is important ! </p>
           <div class="column text-right">
             <a class="btn btn-primary"> go to </a>
           </div>

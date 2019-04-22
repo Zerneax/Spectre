@@ -11,6 +11,7 @@ export class SidebarComponent implements OnInit {
   isFocusInsideComponent = false;
   isComponentClicked = false;
   test: string = "";
+  layoutOpened: boolean = false;
 
   constructor(private eRef: ElementRef,
     private sidebarService: SidebarService) {}
@@ -30,6 +31,10 @@ export class SidebarComponent implements OnInit {
 
   close() {
     this.sidebarService.closeSidebar();
+  }
+
+  openCloseLayout() {
+    this.layoutOpened = !this.layoutOpened;
   }
 
 

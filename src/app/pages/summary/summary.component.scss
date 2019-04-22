@@ -7,10 +7,17 @@
   box-shadow : 0 .25rem 1rem rgba(48,55,66,.15);
 }
 
-.blur {
-  filter: blur(1px);
+.opacity {
+
+  filter: opacity(40%) grayscale(20%);
+  // filter: grayscale(80%);
 }
 
 .not-active {
   pointer-events: none;
+}
+
+.heighPTiles {
+  min-height: 2rem;
+  max-height: 2rem;
 }

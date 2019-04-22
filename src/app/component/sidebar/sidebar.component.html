@@ -1,8 +1,19 @@
 <div class="sidebar">
-  <p>
-    sidebar works!
-  </p>
-
-  <p> {{test}} </p>
-  <i class="icon icon-cross" (click)="close()"></i>
+  <div class="container">
+    <div class="column text-right text-primary">
+      <i class="icon icon-cross" (click)="close()"></i>
+    </div>
+    <div class="column col-mx-auto mx-2 my-2">
+      <h2 class="text-center text-primary spectre">SPECTRE</h2>
+    </div>
+  </div>
+  <div class="column my-2 mx-2">
+    <h5 class="text-left title pt-2" (click)="openCloseLayout()"> Layout <i class="icon" [class.icon-arrow-down]="!layoutOpened" [class.icon-arrow-up]="layoutOpened"></i> </h5>
+    <div class="column pt-2 layout" *ngIf="layoutOpened">
+      <div class="column">
+        <p><a class="subtitle" routerLink="topic/layout" routerLinkActive="active" (click)="close()"> Flexbox grid </a></p>
+        <p><a class="subtitle"> Responsive </a></p>
+      </div>
+    </div>
+  </div>
 </div>
